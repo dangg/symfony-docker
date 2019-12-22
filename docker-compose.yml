@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  webapp:
+    image: "nginx:latest"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./public:/usr/share/nginx/html
+      - ./var/log:/var/log/nginx
+    ports:
+      - "50080:80"
+  php-fpm:
+    image: "phpdockerio/php73-fpm"
+    volumes:
+      - ./:/www
+    ports:
+      - "59000:9000"
