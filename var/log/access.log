@@ -51,3 +51,6 @@
 192.168.88.229 - - [22/Dec/2019:21:53:25 +0000] "GET / HTTP/1.1" 500 104433 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
 192.168.88.229 - - [22/Dec/2019:21:53:34 +0000] "GET / HTTP/1.1" 500 104391 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
 192.168.88.229 - - [22/Dec/2019:21:53:50 +0000] "GET / HTTP/1.1" 200 82 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
+192.168.88.229 - - [22/Dec/2019:21:56:50 +0000] "GET / HTTP/1.1" 500 251352 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
+192.168.88.229 - - [22/Dec/2019:21:56:58 +0000] "GET / HTTP/1.1" 500 251375 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
+192.168.88.229 - - [22/Dec/2019:22:40:39 +0000] "GET / HTTP/1.1" 200 15 "http://192.168.88.225:50080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36" "-"
