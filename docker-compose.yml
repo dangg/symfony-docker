@@ -15,3 +15,10 @@ services:
       - ./:/www
     ports:
       - "59000:9000"
+  maria-db:
+    image: "mariadb:latest"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_USER: symfony-app
+      MYSQL_PASSWORD: symfony123
+      MYSQL_DATABASE: symfony-app
