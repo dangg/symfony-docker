@@ -1,4 +1,4 @@
-# Slim-fit Symfony with Docker tutorial
+# Symfony with Docker - a slim-fit tutorial
 
 ## Intro
 
