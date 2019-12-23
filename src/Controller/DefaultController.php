@@ -16,6 +16,6 @@ class DefaultController extends AbstractController
      */
     public function indexAction()
     {
-        return new Response(var_export("123", true));
+        return new Response(var_export("Hello World!", true));
     }
 }

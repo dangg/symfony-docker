@@ -1,17 +1,26 @@
 version: "3"
 
 services:
+  # This is the www service that we are exposing using nginx
   webapp:
-    image: "nginx:latest"
+    image: "nginx:latest" # official image
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      # We mount our own configuration for nginx
+      - ./config/nginx:/etc/nginx/conf.d
+      # We mount the actual application
       - ./public:/usr/share/nginx/html
+      # We mount logging so we can local access to the logs
+      # Sometimes this is not needed because you can mount a kibana and elasticsearch image
       - ./var/log:/var/log/nginx
     ports:
+      # The local port 50080 is mapped to port 80 on the machine
       - "50080:80"
+  # nginx will send all php requests to the PHP FPM server
   php-fpm:
-    image: "phpdockerio/php73-fpm"
+    image: akeneo/fpm # good image of php-fpm with many extensions and well maintained
+    user: docker
     volumes:
-      - ./:/www
+      - ./:/srv/application # mounting our application on a specific path
     ports:
+      # The local port 59000 will be mapped to the port 9000
       - "59000:9000"
