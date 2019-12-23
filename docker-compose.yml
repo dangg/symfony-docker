@@ -22,5 +22,5 @@ services:
     volumes:
       - ./:/srv/application # mounting our application on a specific path
     ports:
-      # The local port 59000 will be mapped to the port 9000
-      - "59000:9000"
+      # The local port 59001 will be mapped to the port 9001
+      - "59001:9001"
